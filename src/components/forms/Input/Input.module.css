@@ -1,0 +1,17 @@
+.form_container {
+	position: relative;
+}
+.input {
+	width: 500px;
+	height: 40px;
+	/* width: 100%; */
+	text-align: left;
+	padding-left: 44px;
+	border-radius: 6px;
+	border: none;
+}
+.search_icon {
+	position: absolute;
+	left: 19px;
+	top: 11px;
+}
