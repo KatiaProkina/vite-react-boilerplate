@@ -1,9 +1,9 @@
 import { createRouter } from "@tanstack/react-router";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import { routeTree } from "./routeTree.gen.ts";
-import style from "./styles/index.module.css";
+import App from "./App";
+import { routeTree } from "./routeTree.gen";
+
 const router = createRouter({ routeTree });
 
 declare module "@tanstack/react-router" {
@@ -18,7 +18,7 @@ if (!rootElement.innerHTML) {
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<React.StrictMode>
-			<App router={router} className={style.main} />
+			<App router={router} />
 		</React.StrictMode>
 	);
 }
